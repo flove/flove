@@ -1,0 +1,17 @@
+App
+    |-- index.html              # 入口
+    |-- gulpfile.js             # gulp 脚本
+    |-- src                     # 开发目录
+        |-- img                 # 图片
+        |-- font                # 字体
+        |-- js                  # 逻辑
+        |-- scss                # 样式
+            |-- normalize.css   # 通用的样式
+        |-- lib                 # 库
+            |-- jquery.js       # jquery
+            |-- seajs.js        # js模块管理
+    |-- dist                    # 部署目录
+        |-- img
+        |-- font
+        |-- css
+        |-- lib

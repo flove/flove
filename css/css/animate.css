@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.fadein {
+  position: relative;
+  background: red;
+  width: 80px;
+  color: #fff;
+  padding: 10px;
+  animation: myfirst 5s linear alternate both;
+  /* Firefox: */
+  -moz-animation: myfirst 5s linear alternate both;
+  /* Safari 和 Chrome: */
+  -webkit-animation: myfirst 5s linear alternate both;
+  /* Opera: */
+  -o-animation: myfirst 5s linear alternate both;
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background: black;
+    left: 0px;
+    top: 0px;
+  }
+}

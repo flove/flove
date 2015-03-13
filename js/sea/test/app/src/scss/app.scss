@@ -1,0 +1,16 @@
+@import "var";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    &:focus {
+        outline: none;
+    }
+    background: $color_info;
+    border: none;
+    padding: 10px 15px;
+}

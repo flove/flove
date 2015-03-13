@@ -1,0 +1,33 @@
+.fadein {
+    $animate: myfirst 5s linear alternate both;
+    position: relative;
+    background: red;
+    width: 80px;
+
+    color: #fff;
+    padding: 10px;
+    animation: $animate;
+    /* Firefox: */
+    -moz-animation: $animate;
+    /* Safari 和 Chrome: */
+    -webkit-animation: $animate;
+    /* Opera: */
+    -o-animation: $animate;
+
+//    animation-name: myfirst;// 设置动画名称
+//    animation-duration: 5s; // 动画播放时间
+//    animation-timing-function: linear; // 动画播放速度
+//    animation-delay: 2s; // 动画延迟播放时间
+//    animation-iteration-count: infinite; // 动画播放次数
+//    animation-direction: alternate; // 是否应该轮流反向播放动画
+//    animation-play-state: running;// 当前播放状态
+//    animation-fill-mode: both; // 动画播放之前或者之后动画状态是否可见
+}
+
+@-webkit-keyframes myfirst {
+    0%   {background: red; left:0px; top:0px;}
+    25%  {background: yellow; left:200px; top:0px;}
+    50%  {background: blue; left:200px; top:200px;}
+    75%  {background: green; left:0px; top:200px;}
+    100% {background: black; left:0px; top:0px;}
+}

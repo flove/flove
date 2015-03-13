@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/circle.css">
+</head>
+<body>
+    <div class="main">
+        <button id="button" data-word="I am button"></button>
+    </div>
+    <script>
+        window.onload = function() {
+            document.getElementById('button').onmousedown = function(e) {
+                circle(e);
+            };
+        };
+        function circle(e) {
+            var $btn = document.getElementById('button');
+            $btn.innerHTML = '<div class="circle" id="circle"></div>';
+
+            var $c = document.getElementById('circle');
+            $c.style.left = (e.offsetX - 25) + 'px';
+            $c.style.top = (e.offsetY - 25)+ 'px';
+
+            window.setTimeout(function() {
+                $btn.innerHTML = '';
+            }, 600);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  background: #d9edf7;
+  border: none;
+  padding: 10px 15px;
+}
+.btn:focus {
+  outline: none;
+}

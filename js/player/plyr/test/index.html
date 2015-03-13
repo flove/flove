@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>plyr 测试</title>
+    <link rel="stylesheet" href="src/plyr.css">
+    <style>
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 class="center-text">plyr 一个简洁的html5播放器</h1>
+<div class="player">
+    <video poster="src/poster.jpg" controls crossorigin>
+        <source src="src/movie.mp4" type="video/mp4">
+        <track kind="captions" label="English captions" src="src/en.vtt" srclang="en" default>
+        <div>
+            <a href="src/movie.mp4">Download</a>
+        </div>
+    </video>
+</div>
+<script>
+    (function(d,p){
+        var a=new XMLHttpRequest(),
+                b=d.body;
+        a.open("GET",p,!0);
+        a.send();
+        a.onload=function(){
+            var c=d.createElement("div");
+            c.style.display="none";
+            c.innerHTML=a.responseText;
+            b.insertBefore(c,b.childNodes[0])
+        }
+    })(document, "src/sprite.svg");
+</script>
+<script src="src/plyr.js"></script>
+<script>
+    plyr.setup({
+//        enabled: false
+    });
+</script>
+</body>
+</html>

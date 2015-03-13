@@ -1,0 +1,20 @@
+
+
+前端开发两个经典问题：命名冲突、依赖管理
+
+命名冲突
+    Utils中有extend()，moduleA中也有extend()方法
+    可以通过命名空间来解决，像java，java.util.lang.method()，空间太长的时候，似乎不够优雅
+
+依赖管理
+
+    依赖管理通过人肉是不行的，比如 dialog.js，依赖common.js、utils.js、service.js等，如果忘记了，就是错误
+    当模块增加的时候，很容易忘记，管理起来也是一坨 o(≧口≦)o
+
+    可以通过配置来解决，dialog.js {"require": [common.js, utils.js, service.js]}
+    确实可以解决问题，但是当数量多的时候，似乎不太优雅
+
+语法:
+    define("模块名称", function(require, exports, module) {
+
+    });

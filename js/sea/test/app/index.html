@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="src/js/sea-modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="src/css/box.css">
+</head>
+<body>
+<button class="btn">Sea.js</button>
+<script src="src/js/sea-modules/seajs/seajs/2.2.0/sea.js" id="seajsnode"></script>
+<script src="src/js/sea-modules/seajs/plugin/seajs-log/dist/seajs-log.js"></script>
+<script src="src/js/sea-modules/seajs/plugin/seajs-text/dist/seajs-text.js"></script>
+<script>
+
+    // ※※ 大招：只使用【顶级标识】
+
+    /*
+    1. 顶级标识始终相对 base 基础路径解析。
+    2. 绝对路径和根路径始终相对当前页面解析。
+    3. require 和 require.async 中的相对路径相对当前模块路径来解析。
+    4. seajs.use 中的相对路径始终相对当前页面来解析。
+    */
+    seajs.config({
+        // base 默认为seajs的目录，此处相对路径为相对于页面，不能使用【顶级标识】
+        base: './src/',
+        paths: {
+            'u': 'js/utils',
+            'm': 'js/module',
+            's': 'js/sea-modules',
+            't': 'tpl',
+            'c': 'css'
+        },
+        // alias 里面的路径必须是【顶标识的】，不能有./和../之类的
+        alias: {
+            'jquery': 'js/sea-modules/jquery/jquery/1.10.1/jquery-debug.js'
+        },
+        vars: {
+            'version': '1.0.0',
+            'local': 'zh-cn'
+        },
+        debug: true,
+        charset: 'utf-8'
+    });
+
+    // use 中的是【普通标识】，相对于当前页面
+    seajs.use('js/module/app', function() {
+        console.log('init finish');
+    });
+</script>
+</body>
+</html>
