@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>使用伪元素 ':before', ':after' 实现相册叠加效果</title>
+</head>
+<style>
+    div {
+        width: 400px;
+        height: 200px;
+        margin: 20px;
+        position: relative;
+        border: 5px solid #fff;
+        box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+    }
+    div:before,
+    div:after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        width: 100%;
+        height: 100%;
+        border: 5px solid #fff;
+        background-color: #ddd;
+        -webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+        -moz-box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+        box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+    div:after {
+        top: 5px;
+        left: 0;
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+    <h3>使用伪元素 ':before', ':after' 实现相册叠加效果</h3>
+    <div class="stackone"><img src="img/1.jpg"></div>
+</body>
+</html>

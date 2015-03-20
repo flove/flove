@@ -9,10 +9,9 @@
     - 音乐播放器
     - 视频播放器
     - 大图展示
-* CSS 锦集
+* CSS Demo
     - [图片垂直居中](http://www.fflove.top/css/center.html)
-    - CSS 伪元素
-    - 相册叠加效果
+    - [使用伪元素 ':before', ':after' 实现相册叠加效果](http://localhost:63342/flove/css/photos.html)
     - [div + css 实现图片轮播](http://www.fflove.top/css/slide.html)
 
 * 浏览器兼容性
