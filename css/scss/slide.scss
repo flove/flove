@@ -1,0 +1,79 @@
+// 自定义参数
+$count: 4; // 图片张数
+$height: 400px; // 轮播盒子高度
+$width: 600px; // 轮播盒子宽度
+$view_duration: 3000ms; // 每张图片展示时间
+$space_duration: 300ms; // 切换图片用时
+$direction_flag: 0;// 1 表示纵向滚动, 0 代表横向滚动
+
+
+// 根据自定义参数生成的必须参数
+$total_spend: ($view_duration + $space_duration) * $count;// 动画总时长
+$animate_pointer: top; // 动画改变 CSS 属性
+$animate_unit: $height; // 动画改变 单位
+$direction_pointer: height; // 动画墙 CSS 属性
+$wapper_size: $count * $height; // 动画强对应属性的值
+
+div, ul, li, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+@if $direction_flag == 0 {
+    $animate_pointer: left;
+    $direction_pointer: width;
+    $animate_unit: $width;
+    $wapper_size: $count * $width;
+}
+
+.slider-wapper {
+    width: $width;
+    height: $height;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0 0 6px 1px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 6px 1px rgba(0,0,0,.5);
+    box-shadow: 0 0 6px 1px rgba(0,0,0,.5);
+}
+.wapper-box {
+    list-style: none;
+    position: absolute;
+    -webkit-animation: slide_keyframe $total_spend linear infinite;
+    #{$direction_pointer}: $wapper_size;
+    li {
+        float: left;
+        height: $height;
+        width: $width;
+        overflow: hidden;
+    }
+    img {
+        width: $width;
+    }
+}
+@-webkit-keyframes slide_keyframe {
+    0%, 100% {
+        top: 0;
+    }
+    @for $i from 0 to $count {
+        $before: ($space_duration * $i + $view_duration * ($i + 1))/$total_spend * 100;
+        $after: (($view_duration + $space_duration) * ($i + 1))/$total_spend * 100;
+        $before_size: $animate_unit * $i;
+        $after_size: $animate_unit * ($i + 1);
+
+        @if $i < $count - 1 {
+            #{$before}% {
+                #{$animate_pointer}: -$before_size;
+            }
+            #{$after}% {
+                #{$animate_pointer}: -$after_size;
+            }
+        }
+        @if $i == $count - 1 {
+            #{$before}% {
+                #{$animate_pointer}: -$before_size;
+            }
+        }
+    }
+}
