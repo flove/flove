@@ -1,0 +1,60 @@
+div, ul, li, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.slider-wapper {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+.wapper-box {
+  list-style: none;
+  position: absolute;
+  -webkit-animation: slide_keyframe 13200ms linear infinite;
+  width: 2400px;
+}
+.wapper-box li {
+  float: left;
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+}
+.wapper-box img {
+  width: 600px;
+}
+
+@-webkit-keyframes slide_keyframe {
+  0%, 100% {
+    top: 0;
+  }
+  22.72727% {
+    left: 0px;
+  }
+  25% {
+    left: -600px;
+  }
+  47.72727% {
+    left: -600px;
+  }
+  50% {
+    left: -1200px;
+  }
+  72.72727% {
+    left: -1200px;
+  }
+  75% {
+    left: -1800px;
+  }
+  97.72727% {
+    left: -1800px;
+  }
+}
