@@ -13,7 +13,7 @@
     - 元素垂直居中
     - CSS 伪元素
     - 相册叠加效果
-    - [div + css 实现图片轮播](/css/slide.html)
+    - [div + css 实现图片轮播](http://www.fflove.top/css/slide.html)
 
 * 浏览器兼容性
 
