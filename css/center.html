@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>图片垂直居中</title>
+    <style>
+        div {
+            float: left;
+            margin: 10px 10px 0 0;
+        }
+        .imgbox {
+            position: relative;
+            border: 1px solid #ddd;
+            width: 300px; /*也可以写入百分比*/
+            height: 300px;
+        }
+        .imgbox img {
+            /* 垂直居中精华 -.- */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+            /* max-width max-height 防止图片大的时候溢出 */
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+<h3>即使盒子和图片的尺寸都不固定, 也可以使用该方式的哦, 很强悍又木有</h3>
+<div class="imgbox">
+    <img src="img/1.jpg">
+</div>
+<div class="imgbox">
+    <img src="img/8.jpg">
+</div>
+<div class="imgbox">
+    <img src="img/9.png">
+</div>
+</body>
+</html>

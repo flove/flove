@@ -10,7 +10,7 @@
     - 视频播放器
     - 大图展示
 * CSS 锦集
-    - 元素垂直居中
+    - [图片垂直居中](http://www.fflove.top/css/center.html)
     - CSS 伪元素
     - 相册叠加效果
     - [div + css 实现图片轮播](http://www.fflove.top/css/slide.html)
