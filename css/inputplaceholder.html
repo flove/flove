@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>使用CSS 修改 input placeholder 占位文本样式</title>
+    <style>
+        /*WebKit和Blink（Safari,Google Chrome, Opera15+）使用伪元素*/
+        input::-webkit-input-placeholder {color: deeppink; }
+
+        /*Mozilla Firefox 4-18使用伪类*/
+        input:-moz-placeholder {color: deeppink;}
+
+        /*Mozilla Firefox 19+ 使用伪元素*/
+        input::-moz-placeholder {color: deeppink;}
+
+        /*IE10使用伪类*/
+        input:-ms-input-placeholder {color: deeppink;}
+
+        .code {
+            line-height: 25px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            background-color: rgba(0,0,0,.9);
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<h3>使用CSS 修改 input placeholder 占位文本样式</h3>
+
+<hr>
+Demo:<br><br>
+<input type="text" placeholder="我是placeholder">
+
+<hr>
+样式定义:<br>
+<div class="code">
+    /*WebKit和Blink（Safari,Google Chrome, Opera15+）使用伪元素*/<br>
+    input::-webkit-input-placeholder {color: deeppink; }<br><br>
+
+    /*Mozilla Firefox 4-18使用伪类*/<br>
+    input:-moz-placeholder {color: deeppink;}<br><br>
+
+    /*Mozilla Firefox 19+ 使用伪元素*/<br>
+    input::-moz-placeholder {color: deeppink;}<br><br>
+
+    /*IE10使用伪类*/<br>
+    input:-ms-input-placeholder {color: deeppink;}
+</div>
+
+
+</body>
+</html>

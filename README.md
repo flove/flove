@@ -13,6 +13,6 @@
     - [图片垂直居中](http://www.fflove.top/css/center.html)
     - [使用伪元素 ':before', ':after' 实现相册叠加效果](http://localhost:63342/flove/css/photos.html)
     - [div + css 实现图片轮播](http://www.fflove.top/css/slide.html)
-
+    - [CSS 修改 input placeholder 占位文本颜色](http://www.fflove.top/css/inputplaceholder.html)
 * 浏览器兼容性
 
