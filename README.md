@@ -1,5 +1,5 @@
 # Fannie love
-## 2015, 新的开始
+## 2015, 新的开始 [个人简历](/md/简历.md)
 * 一个自己的网站
 * 一个 Android 应用
 * JavaScript 锦集
