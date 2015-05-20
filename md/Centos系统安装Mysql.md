@@ -56,7 +56,7 @@ export LC_ALL="en_US.UTF-8"
 PATH=$PATH:/usr/local/mysql/bin
 source /etc/profile
 
-E.获取 my.cnf文件, 放到/usr/local/mysql/下
+E.获取 [my.cnf](download.md/my.cnf)文件, 放到/usr/local/mysql/下
 
 vi /usr/local/mysql/my.cnf
 chown -R mysql:mysql /home/mysql/
