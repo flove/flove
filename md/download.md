@@ -1,2 +1,11 @@
-[cmake](http://pan.baidu.com/s/1gds4ERp cmake)
-[mysql](http://pan.baidu.com/s/1kTquF0F mysql)
+* [cmake](http://pan.baidu.com/s/1gds4ERp cmake)
+* [mysql](http://pan.baidu.com/s/1kTquF0F mysql)
+* [libiconv](http://pan.baidu.com/s/1ntrC5G9 libiconv)
+* [mhash](http://pan.baidu.com/s/1mgzMaG4 mhash)
+* [imagick](http://pan.baidu.com/s/1c0nRhb6 imagick)
+* [mcrypt](http://pan.baidu.com/s/1gd2Ebf1 mcrypt)
+* [ImageMagick](http://pan.baidu.com/s/1qWmMJk4 ImageMagick)
+* [php](http://pan.baidu.com/s/1gdmzauR php)
+* [libmcrypt](http://pan.baidu.com/s/1o6rA1Jk libmcrypt)
+* [APC](http://pan.baidu.com/s/1eQ2afYE mysql APC)
+
