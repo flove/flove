@@ -1,5 +1,6 @@
 * [cmake](http://pan.baidu.com/s/1gds4ERp cmake)
 * [mysql](http://pan.baidu.com/s/1kTquF0F mysql)
+* [my.cnf](http://pan.baidu.com/s/1eQ1ujPg my.cnf)
 * [libiconv](http://pan.baidu.com/s/1ntrC5G9 libiconv)
 * [mhash](http://pan.baidu.com/s/1mgzMaG4 mhash)
 * [imagick](http://pan.baidu.com/s/1c0nRhb6 imagick)
